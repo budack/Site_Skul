@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family:'UnifrakturCook', cursive;
+
+}  
+html {
+    overflow-x: hidden;
+
+}
+body {
+    padding: 2rem 5rem;
+    width: 100vw;
+    height: 100%;
+    background-color: #000000;
+}
+.logo img{
+    max-width: 8rem;
+}
+.background {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.background:nth-child(1) {
+    background:
+    url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background:nth-child(2) {
+    background:
+    url("img/wp7423277.webp");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background:nth-child(3) {
+    background:
+    url("img/background.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background:nth-child(4) {
+    background-image: url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg");;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.background:nth-child(5) {
+    background:
+    url("img/backgroundJuan.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background:nth-child(6) {
+    background:
+    url("img/wp7423277.webp");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background:nth-child(7) {
+    background:
+    url("img/wp7423277.webp");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.background.active{
+    visibility: visible;
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+.content {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    padding: 1rem 10rem;
+    position: relative;
+}
+.listamenu {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+li > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+li > a:hover {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+    0 0 30px #fff, 0 0 40px #fff;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+.navlink.active{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
+    0 0 30px #fff, 0 0 40px #fff;
+}
+.maincontent {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 5rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.maincontent.active {
+    display: grid;
+}
+
+/*Vinicius*/
+.gradeIncio{
+    display: flex;
+}
+
+.MiniGradeInicio{
+    width: 25vw;
+    margin: 3vw;
+}
+.tInicio{
+    font-size: 2vw;
+    margin: 1rem;
+    margin-left: 3rem;
+    text-shadow: 1px 1px 5px rebeccapurple, 0 0 10px rebeccapurple, 0 0 15px rebeccapurple, 0 0 20px rebeccapurple;
+}
+
+.TituloInicio{
+    text-align: center;
+    font-size: 4vw;
+    text-shadow: 1px 1px 5px rgb(119, 28, 14), 0 0 10px rgb(119, 28, 14), 0 0 15px rgb(119, 28, 14), 0 0 20px rgb(119, 28, 14);
+}
+
+.tBOSS{
+    font-size: 25px;
+    margin: 1rem;
+    margin-left: 3rem;
+    text-shadow: 1px 1px 5px rgb(119, 28, 14), 0 0 10px rgb(119, 28, 14), 0 0 15px rgb(119, 28, 14), 0 0 20px rgb(119, 28, 14);
+}
+
+.Gradinha{
+    margin-bottom: 20px;
+}
+
+.textinicio{
+    padding-left: 1vw;
+    font-size: 24px;
+}
+
+.divisao{
+    text-align: center;
+    font-size: 30px;
+    margin: 1rem;
+    margin-left: 3rem;
+    text-shadow: 1px 1px 5px rgb(119, 28, 14), 0 0 10px rgb(119, 28, 14), 0 0 15px rgb(119, 28, 14), 0 0 20px rgb(119, 28, 14);
+}
+.tNPC {
+    font-size: 25px;
+    margin: 1rem;
+    margin-left: 3rem;
+    text-shadow: 1px 1px 5px rebeccapurple, 0 0 10px rebeccapurple, 0 0 15px rebeccapurple, 0 0 20px rebeccapurple;
+}
+
+
+.infoNPC{
+    display: flex;
+    margin: 1rem;
+    border-top: 1px solid rebeccapurple;
+    padding: 10px;
+}
+
+.infoNPC1{
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+
+.infoNPC2{
+    margin-left: 4rem 0;
+    margin-top: 0rem;
+    display: flex;
+}
+
+.if{
+    font-size: 40px;
+    color: rebeccapurple;
+    margin-right: 15rem;
+}
+
+.if2{
+    font-size: 20px;
+    color: rebeccapurple;
+    margin-left: 15rem;
+}
+
+abbr{
+    text-decoration: none;
+    color: rebeccapurple;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+.imgNPC{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.infoNPCH{
+    flex-wrap: wrap;
+    margin: 1rem;
+    border-top: 1px solid rebeccapurple;
+    padding: 10px;
+}
+
+.imgNPCH{
+    margin: 50px;
+}
+
+/*Juan*/
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.conquista {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.ConquistasSkull {
+    width: 64px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.descricao {
+    line-height: 1.4;
+}
+
+abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+/*Gabriel*/
+
+ol{
+    margin-right:2rem;
+}
+
+.divitens{
+    font-size: 24px;
+    margin: 50px;
+}
+
+.blockquoteitem{
+    max-width: 650px;
+    margin: 10px 30px;
+    padding: 25px;
+    background-color: #E6D2C0;
+    border: 1px solid #A78C6D;
+    box-sizing: border-box;
+    border-left-width: 10px;
+    align-content: center;
+}
+
+.blockquotetexto{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    color: #755655;
+}
+
+/*ISABELLA*/
+.tituloisa{
+    color: rgb(255, 255, 255);
+    font-family:'UnifrakturCook', cursive;
+    text-shadow: 0 0 5px rgb(182, 50, 235), 0 0 10px rebeccapurple;
+    font-size: 50px;
+    text-align: center;
+}
+
+p{
+    font-family: cursive;
+}
+
+.lista{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.linhatitulo{    
+    color: rebeccapurple;
+}
+
+.ato1{
+    border-bottom: 1px solid rgb(29, 151, 46);
+    box-shadow:  0 0 5px rgb(19, 182, 46),
+    0 0 10px rgb(22, 199, 22),
+    0 0 10px rgb(9, 235, 20),
+    0 0 10px rgb(27, 214, 10); 
+    padding: 5px;
+    color: rgb(241, 241, 241);
+    text-shadow: 0 0 5px rgb(29, 151, 46), 0 0 10px rgb(26, 138, 50);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color: rgba(5, 255, 5, 0.103);
+}
+
+.ato2{
+    border-bottom: 1px solid rgb(63, 44, 231);
+    box-shadow: 0 0 5px rgb(63, 44, 231),
+    0 0 10px rgb(63, 44, 231),
+    0 0 10px rgb(63, 44, 231),
+    0 0 10px rgb(63, 44, 231); 
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(63, 44, 231), 0 0 10px rgb(50, 60, 207);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgba(25, 0, 252, 0.103);
+}
+
+.ato3{
+    border-bottom: 1px solid rgb(255, 0, 0);
+    box-shadow: 0 0 5px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0),
+    0 0 10px rgb(255, 0, 0); 
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(236, 22, 22);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgba(252, 0, 0, 0.103);
+}
+
+.ato4{
+    border-bottom: 1px solid rgb(147, 147, 153);
+    box-shadow: 0 0 5px rgb(147, 147, 153),
+    0 0 10px rgb(147, 147, 153),
+    0 0 10px rgb(147, 147, 153),
+    0 0 10px rgb(147, 147, 153); 
+    padding: 5px;
+    color: rgb(218, 214, 214);
+    text-shadow: 0 0 5px rgb(147, 147, 153), 0 0 10px rgb(123, 123, 129);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgba(163, 158, 158, 0.103);
+}
+
+.ato5{
+    border-bottom: 1px solid rgb(255, 173, 19);
+    box-shadow:0 0 5px rgb(255, 173, 19),
+    0 0 10px rgb(255, 173, 19),
+    0 0 10px rgb(255, 173, 19),
+    0 0 10px rgb(255, 173, 19); 
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(255, 173, 19), 0 0 10px rgb(255, 177, 32);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgba(252, 134, 0, 0.103);
+}
+
+b{
+    color:rgb(255, 255, 255); 
+    text-shadow: 0 0 5px rgb(182, 50, 235), 0 0 10px rgb(138, 48, 221);
+}
+
+P{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 25px;
+} 
+
+.topicos{
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+}
