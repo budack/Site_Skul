@@ -3,116 +3,110 @@
     margin: 0;
     box-sizing: border-box;
     color: #fff;
-    font-family:'UnifrakturCook', cursive;
-
-}  
-html {
-    overflow-x: hidden;
+    font-family: 'UnifrakturCook', cursive;
 
 }
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 body {
     padding: 2rem 5rem;
     width: 100vw;
     height: 100%;
     background-color: #000000;
 }
-.logo img{
+
+hr{
+    border-color: rebeccapurple;
+    width: 100%;
+}
+
+.logo img {
     max-width: 8rem;
 }
+
 .background {
-    position: fixed;    
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
+    visibility: hidden;
     width: 100%;
     height: 100%;
     opacity: 0;
 }
-
 .background:nth-child(1) {
-    background:
-    url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000 url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg") 
+    no-repeat center center/cover;
 }
+
 .background:nth-child(2) {
-    background:
-    url("img/wp7423277.webp");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000 url("img/wp7423277.webp") 
+    no-repeat center center/cover;
 }
+
 .background:nth-child(3) {
-    background:
-    url("img/background.png");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000 url("img/background.png") 
+    no-repeat center center/cover;
 }
+
 .background:nth-child(4) {
-    background-image: url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg");;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background: #000000 url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg") 
+    no-repeat center center/cover;
 }
+
 .background:nth-child(5) {
-    background:
-    url("img/backgroundJuan.jpg");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000 url("img/juan.jpeg") 
+    no-repeat center center/cover;
 }
+
 .background:nth-child(6) {
-    background:
-    url("img/wp7423277.webp");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000 url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg") 
+    no-repeat center center/cover;
 }
+
 .background:nth-child(7) {
-    background:
-    url("img/wp7423277.webp");
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: #000000 url("img/wallpapersden.com_skul-the-hero-slayer-2021_1920x1080.jpg") 
+    no-repeat center center/cover;
 }
-.background.active{
+
+.background.active {
     visibility: visible;
     opacity: 1;
     transition: .5s ease-in-out;
 }
+
 .content {
     width: 100%;
-    height: auto;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     border-radius: 0.5rem;
-    padding: 1rem 10rem;
+    padding: 1rem 3rem 3rem 3rem;
     position: relative;
 }
-.listamenu {
+
+ul {
     list-style: none;
     display: flex;
     gap: 4rem;
     cursor: pointer;
     margin-right: 2rem;
 }
+
 li > a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
 }
+
 li > a:hover {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
-    0 0 30px #fff, 0 0 40px #fff;
+        0 0 30px #fff, 0 0 40px #fff;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -121,70 +115,77 @@ li > a:hover {
     margin-bottom: 2rem;
     margin-top: 0.5rem;
 }
-.navlink.active{
+
+.navlink.active {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff,
-    0 0 30px #fff, 0 0 40px #fff;
+        0 0 30px #fff, 0 0 40px #fff;
 }
+
 .maincontent {
     display: none;
     justify-content: center;
     align-items: center;
-    height: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     margin-top: 5rem;
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
+    padding: 4rem;
+    gap: 2rem;
 }
+
 .maincontent.active {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Vinicius*/
-.gradeIncio{
+.gradeIncio {
     display: flex;
 }
 
-.MiniGradeInicio{
+.MiniGradeInicio {
     width: 25vw;
     margin: 3vw;
 }
-.tInicio{
+
+.tInicio {
     font-size: 2vw;
     margin: 1rem;
     margin-left: 3rem;
     text-shadow: 1px 1px 5px rebeccapurple, 0 0 10px rebeccapurple, 0 0 15px rebeccapurple, 0 0 20px rebeccapurple;
 }
 
-.TituloInicio{
+.TituloInicio {
     text-align: center;
     font-size: 4vw;
     text-shadow: 1px 1px 5px rgb(119, 28, 14), 0 0 10px rgb(119, 28, 14), 0 0 15px rgb(119, 28, 14), 0 0 20px rgb(119, 28, 14);
 }
 
-.tBOSS{
+.tBOSS {
     font-size: 25px;
     margin: 1rem;
     margin-left: 3rem;
     text-shadow: 1px 1px 5px rgb(119, 28, 14), 0 0 10px rgb(119, 28, 14), 0 0 15px rgb(119, 28, 14), 0 0 20px rgb(119, 28, 14);
 }
 
-.Gradinha{
+.Gradinha {
     margin-bottom: 20px;
 }
 
-.textinicio{
+.textinicio {
     padding-left: 1vw;
     font-size: 24px;
 }
 
-.divisao{
+.divisao {
     text-align: center;
     font-size: 30px;
     margin: 1rem;
     margin-left: 3rem;
     text-shadow: 1px 1px 5px rgb(119, 28, 14), 0 0 10px rgb(119, 28, 14), 0 0 15px rgb(119, 28, 14), 0 0 20px rgb(119, 28, 14);
 }
+
 .tNPC {
     font-size: 25px;
     margin: 1rem;
@@ -193,56 +194,55 @@ li > a:hover {
 }
 
 
-.infoNPC{
+.infoNPC {
     display: flex;
-    margin: 1rem;
     border-top: 1px solid rebeccapurple;
     padding: 10px;
 }
 
-.infoNPC1{
+.infoNPC1 {
     margin-left: 4rem;
     margin-top: 1rem;
 }
 
-.infoNPC2{
+.infoNPC2 {
     margin-left: 4rem 0;
     margin-top: 0rem;
     display: flex;
 }
 
-.if{
+.if {
     font-size: 40px;
     color: rebeccapurple;
     margin-right: 15rem;
 }
 
-.if2{
+.if2 {
     font-size: 20px;
     color: rebeccapurple;
     margin-left: 15rem;
 }
 
-abbr{
+abbr {
     text-decoration: none;
     color: rebeccapurple;
     font-size: 20px;
     margin-left: 1rem;
 }
 
-.imgNPC{
+.imgNPC {
     display: flex;
     margin-top: 1rem;
 }
 
-.infoNPCH{
+.infoNPCH {
     flex-wrap: wrap;
     margin: 1rem;
     border-top: 1px solid rebeccapurple;
     padding: 10px;
 }
 
-.imgNPCH{
+.imgNPCH {
     margin: 50px;
 }
 
@@ -279,16 +279,16 @@ abbr {
 
 /*Gabriel*/
 
-ol{
-    margin-right:2rem;
+ol {
+    margin-right: 2rem;
 }
 
-.divitens{
+.divitens {
     font-size: 24px;
     margin: 50px;
 }
 
-.blockquoteitem{
+.blockquoteitem {
     max-width: 650px;
     margin: 10px 30px;
     padding: 25px;
@@ -299,7 +299,7 @@ ol{
     align-content: center;
 }
 
-.blockquotetexto{
+.blockquotetexto {
     font-size: 20px;
     line-height: 1.5;
     margin: 0;
@@ -307,33 +307,33 @@ ol{
 }
 
 /*ISABELLA*/
-.tituloisa{
+.tituloisa {
     color: rgb(255, 255, 255);
-    font-family:'UnifrakturCook', cursive;
+    font-family: 'UnifrakturCook', cursive;
     text-shadow: 0 0 5px rgb(182, 50, 235), 0 0 10px rebeccapurple;
     font-size: 50px;
     text-align: center;
 }
 
-p{
+p {
     font-family: cursive;
 }
 
-.lista{
+.lista {
     font-family: cursive;
     font-size: 20px;
 }
 
-.linhatitulo{    
+.linhatitulo {
     color: rebeccapurple;
 }
 
-.ato1{
+.ato1 {
     border-bottom: 1px solid rgb(29, 151, 46);
-    box-shadow:  0 0 5px rgb(19, 182, 46),
-    0 0 10px rgb(22, 199, 22),
-    0 0 10px rgb(9, 235, 20),
-    0 0 10px rgb(27, 214, 10); 
+    box-shadow: 0 0 5px rgb(19, 182, 46),
+        0 0 10px rgb(22, 199, 22),
+        0 0 10px rgb(9, 235, 20),
+        0 0 10px rgb(27, 214, 10);
     padding: 5px;
     color: rgb(241, 241, 241);
     text-shadow: 0 0 5px rgb(29, 151, 46), 0 0 10px rgb(26, 138, 50);
@@ -342,12 +342,12 @@ p{
     background-color: rgba(5, 255, 5, 0.103);
 }
 
-.ato2{
+.ato2 {
     border-bottom: 1px solid rgb(63, 44, 231);
     box-shadow: 0 0 5px rgb(63, 44, 231),
-    0 0 10px rgb(63, 44, 231),
-    0 0 10px rgb(63, 44, 231),
-    0 0 10px rgb(63, 44, 231); 
+        0 0 10px rgb(63, 44, 231),
+        0 0 10px rgb(63, 44, 231),
+        0 0 10px rgb(63, 44, 231);
     padding: 5px;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px rgb(63, 44, 231), 0 0 10px rgb(50, 60, 207);
@@ -356,12 +356,12 @@ p{
     background-color: rgba(25, 0, 252, 0.103);
 }
 
-.ato3{
+.ato3 {
     border-bottom: 1px solid rgb(255, 0, 0);
     box-shadow: 0 0 5px rgb(255, 0, 0),
-    0 0 10px rgb(255, 0, 0),
-    0 0 10px rgb(255, 0, 0),
-    0 0 10px rgb(255, 0, 0); 
+        0 0 10px rgb(255, 0, 0),
+        0 0 10px rgb(255, 0, 0),
+        0 0 10px rgb(255, 0, 0);
     padding: 5px;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px rgb(255, 0, 0), 0 0 10px rgb(236, 22, 22);
@@ -370,12 +370,12 @@ p{
     background-color: rgba(252, 0, 0, 0.103);
 }
 
-.ato4{
+.ato4 {
     border-bottom: 1px solid rgb(147, 147, 153);
     box-shadow: 0 0 5px rgb(147, 147, 153),
-    0 0 10px rgb(147, 147, 153),
-    0 0 10px rgb(147, 147, 153),
-    0 0 10px rgb(147, 147, 153); 
+        0 0 10px rgb(147, 147, 153),
+        0 0 10px rgb(147, 147, 153),
+        0 0 10px rgb(147, 147, 153);
     padding: 5px;
     color: rgb(218, 214, 214);
     text-shadow: 0 0 5px rgb(147, 147, 153), 0 0 10px rgb(123, 123, 129);
@@ -384,12 +384,12 @@ p{
     background-color: rgba(163, 158, 158, 0.103);
 }
 
-.ato5{
+.ato5 {
     border-bottom: 1px solid rgb(255, 173, 19);
-    box-shadow:0 0 5px rgb(255, 173, 19),
-    0 0 10px rgb(255, 173, 19),
-    0 0 10px rgb(255, 173, 19),
-    0 0 10px rgb(255, 173, 19); 
+    box-shadow: 0 0 5px rgb(255, 173, 19),
+        0 0 10px rgb(255, 173, 19),
+        0 0 10px rgb(255, 173, 19),
+        0 0 10px rgb(255, 173, 19);
     padding: 5px;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px rgb(255, 173, 19), 0 0 10px rgb(255, 177, 32);
@@ -398,37 +398,38 @@ p{
     background-color: rgba(252, 134, 0, 0.103);
 }
 
-b{
-    color:rgb(255, 255, 255); 
+b {
+    color: rgb(255, 255, 255);
     text-shadow: 0 0 5px rgb(182, 50, 235), 0 0 10px rgb(138, 48, 221);
 }
 
-P{
+P {
     font-size: 20px;
 }
 
-h2{
+h2 {
     font-size: 25px;
-} 
+}
 
-.topicos{
+.topicos {
     font-weight: bolder;
     font-style: italic;
     text-decoration: underline;
 }
 
 /*danilo*/
-.cardArea{  
+.cardArea {
     display: flex;
     flex-wrap: wrap;
     gap: 7%;
     justify-content: center;
     margin-bottom: 50px;
-    width:  100%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
-.CardsComuns{
+
+.CardsComuns {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -441,7 +442,8 @@ h2{
     box-shadow: rebeccapurple 0px 0px 20px;
     margin-top: 50px;
 }
-.cardRaros{
+
+.cardRaros {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -454,7 +456,8 @@ h2{
     box-shadow: #2196f3 0px 0px 20px;
     margin-top: 50px;
 }
-.cardUnicos{
+
+.cardUnicos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -462,13 +465,18 @@ h2{
     width: 290px;
     height: auto;
     text-align: center;
-    background-color: #000000;
+    background-color: #000
+    
+    
+    
+    
+    000;
     border-radius: 10px;
     box-shadow: #e91e63 0px 0px 20px;
     margin-top: 50px;
 }
 
-.cardLendarios{
+.cardLendarios {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,12 +489,12 @@ h2{
     margin-top: 50px;
 }
 
-.tableInfo{
+.tableInfo {
     width: 100%;
     border-collapse: collapse;
 }
 
-.tabelaHabilidades{
+.tabelaHabilidades {
     width: 90%;
     margin: auto;
     border-collapse: collapse;
@@ -494,7 +502,8 @@ h2{
     text-align: justify;
     padding-left: 50px;
 }
-.tdHabilidades{
+
+.tdHabilidades {
     text-align: justify;
     padding-left: 40px;
     padding-right: 40px;
