@@ -416,3 +416,91 @@ h2{
     font-style: italic;
     text-decoration: underline;
 }
+
+/*danilo 👍😎👍  *
+.gifSkul{
+}*/
+.cardArea{  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    margin-bottom: 50px;
+    width:  100%;
+    margin: auto;
+    text-align: center;
+}
+.CardsComuns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: auto;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: rebeccapurple 0px 0px 20px;
+    margin-top: 50px;
+}
+.cardRaros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: auto;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: #2196f3 0px 0px 20px;
+    margin-top: 50px;
+}
+.cardUnicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: auto;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: #e91e63 0px 0px 20px;
+    margin-top: 50px;
+}
+
+.cardLendarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: auto;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: #fbc02d 0px 0px 20px;
+    margin-top: 50px;
+}
+
+.tableInfo{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabelaHabilidades{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    border: solid 1px rebeccapurple;
+    text-align: justify;
+    padding-left: 50px;
+}
+.tdHabilidades{
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
