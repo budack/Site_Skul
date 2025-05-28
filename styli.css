@@ -59,7 +59,7 @@ hr{
 }
 
 .background:nth-child(5) {
-    background: #000000 url("img/juan.jpeg") 
+    background: #000000 url("img/backgroundJuan.jpg") 
     no-repeat center center/cover;
 }
 
