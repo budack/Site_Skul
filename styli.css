@@ -424,10 +424,25 @@ h2 {
     justify-content: center;
     width: 290px;
     height: auto;
+    text-align: center;
     background-color: #000000;
     border-radius: 10px;
-    box-shadow: rgb(29, 151, 46);
+    box-shadow: #08741a 0px 0px 20px;
     margin-top: 50px;
+    overflow-x: hidden;
+    margin-bottom: 50px;
+}
+
+.cardArena{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: auto;
 }
 
 /*danilo*/
@@ -478,12 +493,7 @@ h2 {
     width: 290px;
     height: auto;
     text-align: center;
-    background-color: #000
-    
-    
-    
-    
-    000;
+    background-color: #000000;
     border-radius: 10px;
     box-shadow: #e91e63 0px 0px 20px;
     margin-top: 50px;
